@@ -12,9 +12,9 @@ namespace Geometry
         public Trapezoid(double a, double b, double c, double d)
             : base(a)
         {
-            this.B = b;
-            this.C = c;
-            this.D = d;
+            B = b;
+            C = c;
+            D = d;
         }
 
         public override double Perimeter()
@@ -31,6 +31,30 @@ namespace Geometry
             double area = 0.5 * (A + C) * h;
                 return Math.Abs(area);
             
+        }
+        private double c;
+        private double d;
+        public double C
+        {
+            get
+            {
+                return c;
+            }
+            set
+            {
+                c = value;
+            }
+        }
+        public double D
+        {
+            get
+            {
+                return d;
+            }
+            set
+            {
+                d = value;
+            }
         }
     }
 }

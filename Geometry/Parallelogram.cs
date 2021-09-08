@@ -23,5 +23,17 @@ namespace Geometry
             double area = (A * B)*Math.Sin(20*(Math.PI/180.0));
             return area;
         }
+        private int angle;
+        public int Angle
+        {
+            get
+            {
+                return angle;
+            }
+            set
+            {
+                angle = value;
+            }
+        }
     }
 }

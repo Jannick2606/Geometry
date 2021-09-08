@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Collections.Generic;
 
 namespace Geometry
@@ -16,12 +15,11 @@ namespace Geometry
 
             //For my list I use the datatype object because there will be different datatypes in the same list
             //The assignment says I have to call the methods in the loop but my teacher told me I could just add the methods into the list instead
-            List<object> classes = new List<object> { s.Perimeter(), s.Area(), r.Perimeter(), r.Area(), p.Perimeter(), p.Area(), tra.Perimeter(), tra.Area(), tri.Perimeter(), tri.Area() };
-            for (int i = 0; i < classes.Count; i++)
+            List<Square> classes = new List<Square> { s, r, p, tra, tri };
+            foreach (Square item in classes)
             {
-                if(i%2 == 0)
-                    Console.WriteLine($"The perimeter is: {classes[i]}");
-                else Console.WriteLine($"The area is: {classes[i]}");
+                Console.WriteLine($"The perimeter is: {item.Perimeter()}");
+                Console.WriteLine($"The area is: {item.Area()}");
             }
         }
     }

@@ -12,7 +12,7 @@ namespace Geometry
         public Rectangle(double a, double b)
             : base(a)
         {
-            this.B = b;
+            B = b;
         }
     }
 }
