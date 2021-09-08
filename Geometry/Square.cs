@@ -31,7 +31,6 @@ namespace Geometry
             return area;
         }
 
-        //All the variables I need for the calculations in this class as well as the other classes are gathered here
         //In the formulas the sides are called a, b, c or d, so in my opinion those are also fitting names for my variables
         private double a;
         private double b;

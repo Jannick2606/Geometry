@@ -13,8 +13,6 @@ namespace Geometry
             Trapezoid tra = new Trapezoid(10, 9, 8, 9);
             Triangle tri = new Triangle(6, 8);
 
-            //For my list I use the datatype object because there will be different datatypes in the same list
-            //The assignment says I have to call the methods in the loop but my teacher told me I could just add the methods into the list instead
             List<Square> classes = new List<Square> { s, r, p, tra, tri };
             foreach (Square item in classes)
             {
