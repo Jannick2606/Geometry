@@ -36,7 +36,7 @@ namespace Geometry
         private double b;
 
         #region GetSet
-        public virtual double A
+        protected virtual double A
         { 
             get
             {
@@ -47,7 +47,7 @@ namespace Geometry
                 a = value;
             }
         }
-        public virtual double B
+        protected virtual double B
         {
             get
             {

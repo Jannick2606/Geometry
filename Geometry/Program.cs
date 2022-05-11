@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace Geometry
 {
@@ -16,8 +17,8 @@ namespace Geometry
             List<Square> classes = new List<Square> { s, r, p, tra, tri };
             foreach (Square item in classes)
             {
-                Console.WriteLine($"The perimeter is: {item.Perimeter()}");
-                Console.WriteLine($"The area is: {item.Area()}");
+                Console.WriteLine($"The perimeter of the {TypeDescriptor.GetClassName(item)} is: {item.Perimeter()}");
+                Console.WriteLine($"The area of the {TypeDescriptor.GetClassName(item)} is: {item.Area()}");
             }
         }
     }
